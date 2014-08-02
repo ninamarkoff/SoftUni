@@ -20,7 +20,7 @@
         output.style.backgroundColor = 'red';
     }
 
-    input.addEventListener('keyup', function () {
+    function checkValue () {
         if (input.value === '') {
             output.value = '';
         } else if (input.value.match(/[0-9]+/)[0] === input.value) {
@@ -33,20 +33,10 @@
         if (input.value === '') {
             output.value = '';
         }
-    });
+    }
 
-    input.addEventListener('change', function () {
-        if (input.value === '') {
-            output.value = '';
-        } else if (input.value.match(/[0-9]+/)[0] === input.value) {
-            output.value = this.value;
-        } else {
-            setInputRedColor();
-            output.value = this.value.match(/[0-9]+/)[0];
-            setTimeout(setInputWhiteColor, 1000);
-        }
-        if (input.value === '') {
-            output.value = '';
-        }
-    });
+
+    input.addEventListener('keyup', checkValue);
+
+    input.addEventListener('change', checkValue);
 }());
