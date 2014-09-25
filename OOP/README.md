@@ -1,4 +1,4 @@
 SoftUni
 =======
 
-Homeworks @SoftUni
+OOP Homeworks @SoftUni
