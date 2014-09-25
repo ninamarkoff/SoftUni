@@ -1,2 +1,1 @@
-SoftUni
 OOP Homeworks @SoftUni
