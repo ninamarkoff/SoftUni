@@ -1,4 +1,0 @@
-SoftUni
-=======
-
-OOP Homeworks @SoftUni
